@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira das Profissões 2024 - Etec Adhemar Batista Heremitas</title>
+    <link rel="stylesheet" href="cssparte.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #C8102E;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: top 0.3s ease-in-out;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        main {
+            padding: 90px 30px 30px 30px;
+        }
+
+        .highlight-news {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .highlight-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            font-style: italic;
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .interview-section h3 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #C8102E;
+            margin-bottom: 15px;
+        }
+
+        .interview-section iframe {
+            width: 100%;
+            height: 480px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #C8102E;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="#" class="logo">E1 NEWS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="./parte dos projts.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="eventos" class="highlight-news">
+            <h2>Feira das Profissões 2024 da Escola Adhemar Batista Hemeritas destaca projetos inovadores</h2>
+            <p class="subtitle">Evento reúne alunos, professores e visitantes no dia 23 de outubro.</p>
+            <img src="./etecece.jpg" alt="Feira das Profissões" class="highlight-image">
+            <p class="author"><strong>Por:</strong> Danilo Duarte, Juan de Almeida, Thiago Cardoso e Weslley Batista</p>
+
+            <p>No dia 23 de outubro, a <a href="https://www.google.com/maps/place/ETEC+Professor+Adhemar+Batista+Hem%C3%A9ritas/@-23.5806819,-46.526075,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce60901c40ae61:0x64b518373a953aa1!8m2!3d-23.5806819!4d-46.5235001!16s%2Fg%2F1s049m9_1?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">ETEC Adhemar Batista Heremitas</a> promove a Feira das Profissões 2024, evento que tem como objetivo aproximar os estudantes das várias possibilidades de carreira e áreas de atuação.</p>
+
+            <p>Diversos alunos e convidados também participarão, oferecendo orientações práticas e dicas de carreira.</p>
+        </section>
+
+        <section class="interview-section">
+            <h3>Entrevista com alunos</h3>
+            <!-- Incorpore o vídeo do YouTube -->
+            <iframe src="https://www.youtube.com/embed/zi7S3ygJ1CM" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E1 NEWS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let previousScrollPosition = window.pageYOffset;
+        const header = document.querySelector("header");
+
+        window.onscroll = function () {
+            let currentScrollPosition = window.pageYOffset;
+
+            if (previousScrollPosition < currentScrollPosition) {
+                header.style.top = "-80px";
+            } else {
+                header.style.top = "0";
+            }
+            previousScrollPosition = currentScrollPosition;
+        };
+    </script>
+</body>
+</html>
